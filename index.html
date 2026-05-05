@@ -64,7 +64,7 @@ body::before{
 
 /* === NAV === */
 nav.topnav{
-  position:fixed;top:31px;left:0;right:0;
+  position:fixed;top:0;left:0;right:0;
   z-index:100;
   padding:18px 40px;
   display:flex;justify-content:space-between;align-items:center;
@@ -137,18 +137,10 @@ nav.topnav ul a:hover::after{width:100%}
   pointer-events:none;
   mask-image:radial-gradient(circle at 70% 50%, black 0%, transparent 70%);
 }
-/* 巨大背景數字 */
+/* 巨大背景數字（候選號次未抽出，先暫時拿掉） */
 .hero::after{
-  content:'04';
-  position:absolute;
-  left:-60px;bottom:-200px;
-  font-family:'Space Grotesk',sans-serif;
-  font-size:55vw;
-  font-weight:700;
-  color:var(--bg-soft);
-  line-height:.8;
-  letter-spacing:-.05em;
-  pointer-events:none;
+  content:'';
+  display:none;
 }
 
 .hero-text{position:relative;z-index:2;animation:fadeUp 1s .2s both}
@@ -321,24 +313,28 @@ nav.topnav ul a:hover::after{width:100%}
 .hero-image-num{
   position:absolute;
   bottom:-30px;right:-10px;
-  font-family:'Space Grotesk',sans-serif;
-  font-weight:700;
-  font-size:200px;
-  color:var(--lime);
-  line-height:.8;
-  letter-spacing:-.05em;
   z-index:3;
-  text-shadow:6px 6px 0 var(--bg-deep);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
+}
+.hero-image-num .circle{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  border:8px solid #e63946;
+  background:transparent;
+  box-shadow:6px 6px 0 var(--bg-deep);
+  display:block;
 }
 .hero-image-num small{
   font-size:14px;
-  display:block;
   letter-spacing:.3em;
   color:var(--paper);
-  margin-top:8px;
   font-family:'JetBrains Mono',monospace;
   font-weight:500;
-  text-shadow:none;
+  text-align:center;
 }
 .hero-image-frame{
   position:absolute;
@@ -348,8 +344,7 @@ nav.topnav ul a:hover::after{width:100%}
 }
 @media (max-width:900px){
   .hero{grid-template-columns:1fr;gap:60px;padding-top:120px}
-  .hero-image-num{font-size:120px}
-  .hero::after{font-size:90vw}
+  .hero-image-num .circle{width:120px;height:120px;border-width:6px}
   .hero-meta{grid-template-columns:repeat(2,1fr);gap:24px}
 }
 
@@ -1012,17 +1007,8 @@ section{padding:120px 40px;position:relative}
   overflow:hidden;
 }
 .cta::before{
-  content:'04';
-  position:absolute;
-  left:50%;top:50%;
-  transform:translate(-50%,-50%);
-  font-family:'Space Grotesk',sans-serif;
-  font-weight:700;
-  font-size:65vw;
-  color:var(--bg-soft);
-  line-height:1;
-  letter-spacing:-.05em;
-  pointer-events:none;
+  content:'';
+  display:none;
 }
 .cta-content{position:relative;z-index:2;max-width:900px;margin:0 auto}
 .cta .label{
@@ -1078,13 +1064,12 @@ section{padding:120px 40px;position:relative}
   color:var(--lime);
 }
 .ballot-row{display:flex;align-items:center;gap:32px}
-.ballot-num{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:96px;
-  font-weight:700;
-  color:var(--lime);
-  line-height:1;
-  letter-spacing:-.03em;
+.ballot-circle{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  border:5px solid #e63946;
+  flex-shrink:0;
 }
 .ballot-info{text-align:left}
 .ballot-info .name{
@@ -1174,11 +1159,8 @@ footer{
 </head>
 <body>
 
-<div class="banner">▲ <strong>網站原型 PROTOTYPE</strong> ・ 內容為示意，正式上線前須由本人審閱</div>
-
 <nav class="topnav">
   <div class="brand">
-    <span class="num">04</span>
     <span class="name">郭凱倫 ｜ KUO KAI-LUN</span>
   </div>
   <ul>
@@ -1233,7 +1215,10 @@ footer{
       <div class="hero-image-frame"></div>
       <img src="images/hero.jpg" alt="郭凱倫形象照">
     </div>
-    <div class="hero-image-num">04<small>NO. FOUR</small></div>
+    <div class="hero-image-num">
+      <span class="circle"></span>
+      <small>NO. 待抽號</small>
+    </div>
   </div>
 </section>
 
@@ -1258,7 +1243,7 @@ footer{
     </div>
     <div class="election-cell">
       <div class="label">Number 號次</div>
-      <div class="value"><strong>04</strong>　郭凱倫<small>民眾黨提名</small></div>
+      <div class="value"><strong>TBD</strong>　待抽號<small>選號於登記後公告</small></div>
     </div>
     <div class="election-cell">
       <div class="label">Generation 世代</div>
@@ -1333,8 +1318,8 @@ footer{
             <div class="label">議員助理 ・ 東區主任</div>
           </div>
           <div class="stat">
-            <div class="num">04</div>
-            <div class="label">彰化市東區候選號次</div>
+            <div class="num">TBD</div>
+            <div class="label">候選號次・待抽出</div>
           </div>
         </div>
 
@@ -1450,11 +1435,11 @@ footer{
       </div>
 
       <div class="service-item tall-r reveal">
-        <img src="images/elderly.jpg" alt="社區會議聆聽民意">
+        <img src="images/team.jpg" alt="彰化民眾黨團隊大集合">
         <div class="overlay">
-          <span class="tag">社區會議 ・ 議題溝通</span>
-          <h4>議題溝通，從基層開始</h4>
-          <p>協助處理選民服務、地方建設陳情、政策研究與公共議題溝通等事務。一場場社區會議的累積，才是政策真正落地的基礎。</p>
+          <span class="tag">團隊布局 ・ 第三勢力在彰化</span>
+          <h4>彰化團隊大集合</h4>
+          <p>與立委王安祥、彰化縣議員吳韋達、彰化縣議員候選人智弦，以及各區主任、各鄉鎮民代參選夥伴於廟前大集合。第三勢力在彰化，正一里一街、一鄉一鎮地扎下去。</p>
         </div>
       </div>
     </div>
@@ -1515,7 +1500,7 @@ footer{
         <p>面對地方事務，我會堅持務實問政、理性監督，要求政策有方向、建設有配套、預算有效益，並時刻與民眾溝通討論，將地方政治盡可能透明公開，讓彰化的地方政治，讓人民重新產生希望，做出民眾有感的結果。</p>
         <div class="signature">
           <span class="name">郭凱倫</span>
-          <span class="title">CANDIDATE 04</span>
+          <span class="title">— CANDIDATE</span>
         </div>
       </aside>
     </div>
@@ -1625,7 +1610,7 @@ footer{
     <div class="ballot">
       <span class="ballot-label">YOUR BALLOT ／ 您的選票</span>
       <div class="ballot-row">
-        <div class="ballot-num">04</div>
+        <div class="ballot-circle"></div>
         <div class="ballot-info">
           <div class="name">郭 凱 倫</div>
           <div class="role">彰化市東區市民代表 ・ 民眾黨提名</div>
@@ -1640,7 +1625,7 @@ footer{
   <div class="foot-grid">
     <div class="foot-brand">
       <h3>郭凱倫</h3>
-      <div class="slogan">KUO KAI-LUN ／ DISTRICT 04</div>
+      <div class="slogan">KUO KAI-LUN ／ CHANGHUA EAST</div>
       <p>2026 年彰化市東區（第一選區）市民代表參選人。<br>台灣民眾黨提名 ・ 30 歲青年世代。<br>以「打造宜居東區・更有效率的地方政治」為兩大核心主張。</p>
     </div>
     <div class="foot-col">
@@ -1672,7 +1657,7 @@ footer{
   </div>
   <div class="foot-bottom">
     <span>© 2026 郭凱倫競選辦公室 ・ 台灣民眾黨彰化市東區提名候選人</span>
-    <span>CHANGHUA EAST ・ DISTRICT 04 ・ 2026</span>
+    <span>CHANGHUA EAST DISTRICT ・ 2026</span>
   </div>
 </footer>
 
