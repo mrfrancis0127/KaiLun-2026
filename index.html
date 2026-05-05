@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>郭凱倫 — 彰化市東區市民代表 ｜ 東區要更新，換少年來拚</title>
+<meta name="description" content="郭凱倫，台灣民眾黨提名彰化市東區（第一選區）市民代表參選人。30 歲青年世代，現任彰化縣議員吳韋達服務處東區主任、彰化縣青年諮詢委員會城市發展組組長。">
+<meta property="og:title" content="郭凱倫 ｜ 東區要更新，換少年來拚">
+<meta property="og:description" content="2026 彰化市東區市民代表參選人 ・ 台灣民眾黨提名">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@500;700;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d1f1a;
+  --bg-deep:#08140f;
+  --bg-soft:#152e26;
+  --paper:#fafaf5;
+  --paper-dim:#f0f0e8;
+  --lime:#c8f04c;
+  --lime-bright:#d6ff5c;
+  --lime-soft:#e8f5b8;
+  --ink:#0d1f1a;
+  --ink-soft:#3a4d47;
+  --gray:#8a9a92;
+  --line:rgba(255,255,255,.1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Noto Sans TC','Space Grotesk',sans-serif;
+  font-weight:400;
+  line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+::selection{background:var(--lime);color:var(--bg)}
+
+/* === GRAIN === */
+body::before{
+  content:'';
+  position:fixed;inset:0;
+  pointer-events:none;
+  z-index:1000;
+  opacity:.05;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='200' height='200' filter='url(%23n)'/></svg>");
+  mix-blend-mode:multiply;
+}
+
+/* === PROTOTYPE BANNER === */
+.banner{
+  background:var(--lime);
+  color:var(--bg);
+  text-align:center;
+  padding:8px 16px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.15em;
+  font-weight:500;
+}
+
+/* === NAV === */
+nav.topnav{
+  position:fixed;top:31px;left:0;right:0;
+  z-index:100;
+  padding:18px 40px;
+  display:flex;justify-content:space-between;align-items:center;
+  background:rgba(13,31,26,.85);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(200,240,76,.15);
+  color:var(--paper);
+}
+nav.topnav .brand{display:flex;align-items:baseline;gap:14px}
+nav.topnav .brand .num{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:22px;
+  color:var(--lime);
+  font-weight:700;
+}
+nav.topnav .brand .name{
+  font-family:'Noto Serif TC',serif;
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:.05em;
+  color:var(--paper);
+}
+nav.topnav ul{display:flex;gap:32px;list-style:none}
+nav.topnav ul a{
+  color:var(--paper);
+  text-decoration:none;
+  font-size:13px;
+  letter-spacing:.1em;
+  font-weight:500;
+  position:relative;
+  padding:6px 0;
+  transition:color .2s;
+}
+nav.topnav ul a::after{
+  content:'';
+  position:absolute;
+  left:0;bottom:0;
+  width:0;height:2px;
+  background:var(--lime);
+  transition:width .3s ease;
+}
+nav.topnav ul a:hover{color:var(--lime)}
+nav.topnav ul a:hover::after{width:100%}
+@media (max-width:768px){
+  nav.topnav{padding:14px 20px}
+  nav.topnav ul{display:none}
+}
+
+/* === HERO === */
+.hero{
+  min-height:100vh;
+  position:relative;
+  background:var(--bg);
+  color:var(--paper);
+  padding:140px 40px 80px;
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:60px;
+  align-items:center;
+  overflow:hidden;
+}
+/* 螢光網格背景 */
+.hero::before{
+  content:'';
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(200,240,76,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200,240,76,.04) 1px, transparent 1px);
+  background-size:80px 80px;
+  pointer-events:none;
+  mask-image:radial-gradient(circle at 70% 50%, black 0%, transparent 70%);
+}
+/* 巨大背景數字 */
+.hero::after{
+  content:'04';
+  position:absolute;
+  left:-60px;bottom:-200px;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:55vw;
+  font-weight:700;
+  color:var(--bg-soft);
+  line-height:.8;
+  letter-spacing:-.05em;
+  pointer-events:none;
+}
+
+.hero-text{position:relative;z-index:2;animation:fadeUp 1s .2s both}
+
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:14px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.25em;
+  font-weight:500;
+  color:var(--lime);
+  margin-bottom:36px;
+  padding:6px 14px;
+  border:1px solid var(--lime);
+  border-radius:999px;
+}
+.hero-eyebrow::before{
+  content:'';
+  width:6px;height:6px;
+  background:var(--lime);
+  border-radius:50%;
+  animation:pulse 2s infinite;
+}
+@keyframes pulse{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:.5;transform:scale(.85)}
+}
+
+.hero h1{
+  font-family:'Noto Serif TC',serif;
+  font-weight:900;
+  font-size:clamp(60px,9vw,140px);
+  line-height:.92;
+  letter-spacing:-.03em;
+  color:var(--paper);
+  margin-bottom:8px;
+}
+.hero h1 .second{
+  display:block;
+  font-family:'Space Grotesk',sans-serif;
+  font-weight:600;
+  color:var(--lime);
+  font-size:.32em;
+  margin-top:.3em;
+  letter-spacing:.05em;
+}
+
+/* 口號核心區 */
+.hero-slogan{
+  margin-top:48px;
+  display:flex;flex-direction:column;
+  gap:8px;
+}
+.hero-slogan .line{
+  font-family:'Noto Serif TC',serif;
+  font-weight:900;
+  font-size:clamp(28px,3.5vw,48px);
+  line-height:1.15;
+  color:var(--paper);
+}
+.hero-slogan .line .em{
+  display:inline-block;
+  background:var(--lime);
+  color:var(--bg);
+  padding:0 12px 4px;
+  margin-right:4px;
+  transform:rotate(-1deg);
+}
+.hero-slogan .sub{
+  margin-top:24px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:13px;
+  letter-spacing:.3em;
+  color:var(--gray);
+  font-weight:500;
+}
+
+.hero-meta{
+  margin-top:56px;
+  display:grid;
+  grid-template-columns:repeat(3,auto);
+  gap:32px;
+}
+.hero-meta .item{
+  border-top:2px solid var(--lime);
+  padding-top:12px;
+}
+.hero-meta .item .label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;
+  letter-spacing:.2em;
+  color:var(--gray);
+  margin-bottom:6px;
+}
+.hero-meta .item .value{
+  font-family:'Noto Serif TC',serif;
+  font-weight:700;
+  font-size:16px;
+  color:var(--paper);
+}
+
+.hero-cta{
+  margin-top:56px;
+  display:flex;gap:20px;flex-wrap:wrap;
+}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:18px 32px;
+  font-family:'Noto Sans TC',sans-serif;
+  font-size:14px;
+  letter-spacing:.1em;
+  font-weight:700;
+  text-decoration:none;
+  border:2px solid;
+  transition:all .25s;
+  cursor:pointer;
+}
+.btn-primary{
+  background:var(--lime);
+  color:var(--bg);
+  border-color:var(--lime);
+}
+.btn-primary:hover{
+  background:var(--lime-bright);
+  border-color:var(--lime-bright);
+  transform:translate(-2px,-2px);
+  box-shadow:6px 6px 0 var(--paper);
+}
+.btn-ghost{
+  background:transparent;
+  color:var(--paper);
+  border-color:var(--paper);
+}
+.btn-ghost:hover{
+  background:var(--paper);
+  color:var(--bg);
+}
+
+/* HERO IMAGE */
+.hero-image-wrap{
+  position:relative;
+  z-index:2;
+  animation:fadeUp 1s .4s both;
+}
+.hero-image{
+  position:relative;
+  aspect-ratio:3/4;
+  overflow:hidden;
+  background:var(--bg-soft);
+  border:2px solid var(--lime);
+}
+.hero-image img{
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center 15%;
+  filter:contrast(1.05) saturate(.95);
+}
+.hero-image-tag{
+  position:absolute;
+  top:24px;left:-12px;
+  background:var(--lime);
+  color:var(--bg);
+  padding:8px 20px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.2em;
+  font-weight:700;
+  z-index:3;
+}
+.hero-image-num{
+  position:absolute;
+  bottom:-30px;right:-10px;
+  font-family:'Space Grotesk',sans-serif;
+  font-weight:700;
+  font-size:200px;
+  color:var(--lime);
+  line-height:.8;
+  letter-spacing:-.05em;
+  z-index:3;
+  text-shadow:6px 6px 0 var(--bg-deep);
+}
+.hero-image-num small{
+  font-size:14px;
+  display:block;
+  letter-spacing:.3em;
+  color:var(--paper);
+  margin-top:8px;
+  font-family:'JetBrains Mono',monospace;
+  font-weight:500;
+  text-shadow:none;
+}
+.hero-image-frame{
+  position:absolute;
+  top:20px;left:20px;right:-20px;bottom:-20px;
+  border:1px solid var(--lime);
+  z-index:-1;
+}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;gap:60px;padding-top:120px}
+  .hero-image-num{font-size:120px}
+  .hero::after{font-size:90vw}
+  .hero-meta{grid-template-columns:repeat(2,1fr);gap:24px}
+}
+
+/* === TICKER === */
+.ticker{
+  background:var(--lime);
+  color:var(--bg);
+  padding:18px 0;
+  overflow:hidden;
+  font-family:'Noto Serif TC',serif;
+}
+.ticker-track{
+  display:flex;
+  gap:48px;
+  animation:scroll 30s linear infinite;
+  white-space:nowrap;
+  font-size:18px;
+  letter-spacing:.15em;
+  font-weight:900;
+}
+.ticker-track span{display:inline-flex;align-items:center;gap:48px}
+.ticker-track .dot{font-size:24px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* === ELECTION INFO === */
+.election{
+  background:var(--bg-deep);
+  color:var(--paper);
+  padding:80px 40px;
+}
+.election-grid{
+  max-width:1280px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  background:rgba(200,240,76,.2);
+  border:1px solid rgba(200,240,76,.2);
+}
+.election-cell{
+  background:var(--bg-deep);
+  padding:32px 24px;
+}
+.election-cell .label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.2em;
+  color:var(--lime);
+  margin-bottom:12px;
+  font-weight:500;
+}
+.election-cell .value{
+  font-family:'Noto Serif TC',serif;
+  font-size:24px;
+  font-weight:700;
+  color:var(--paper);
+  line-height:1.3;
+}
+.election-cell .value strong{color:var(--lime)}
+.election-cell .value small{
+  display:block;
+  font-size:13px;
+  color:var(--gray);
+  font-weight:400;
+  margin-top:6px;
+  font-family:'Noto Sans TC',sans-serif;
+}
+@media (max-width:900px){.election-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* === SECTION COMMON === */
+section{padding:120px 40px;position:relative}
+.container{max-width:1280px;margin:0 auto}
+.section-label{
+  display:flex;align-items:center;gap:16px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.3em;
+  font-weight:500;
+  color:var(--ink);
+  margin-bottom:24px;
+}
+.section-label::before{
+  content:'';
+  width:32px;height:2px;
+  background:var(--ink);
+}
+.section-label .num{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:16px;
+  font-weight:700;
+}
+.section-title{
+  font-family:'Noto Serif TC',serif;
+  font-weight:900;
+  font-size:clamp(38px,5.5vw,72px);
+  line-height:1.05;
+  letter-spacing:-.02em;
+  margin-bottom:48px;
+}
+.section-title .accent{
+  background:var(--lime);
+  padding:0 8px 4px;
+  display:inline-block;
+  transform:rotate(-1deg);
+  margin:0 4px;
+}
+
+/* === MANIFESTO（特色：宣言區） === */
+.manifesto{
+  background:var(--paper);
+  position:relative;
+  overflow:hidden;
+}
+.manifesto::before{
+  content:'';
+  position:absolute;
+  top:80px;right:-100px;
+  width:400px;height:400px;
+  background:var(--lime);
+  border-radius:50%;
+  filter:blur(120px);
+  opacity:.4;
+  pointer-events:none;
+}
+.manifesto-content{
+  position:relative;
+  z-index:2;
+  max-width:1100px;
+}
+.manifesto-pre{
+  font-family:'JetBrains Mono',monospace;
+  font-size:13px;
+  letter-spacing:.25em;
+  color:var(--ink-soft);
+  margin-bottom:24px;
+  text-transform:uppercase;
+}
+.manifesto h2{
+  font-family:'Noto Serif TC',serif;
+  font-weight:900;
+  font-size:clamp(40px,7vw,96px);
+  line-height:1;
+  letter-spacing:-.03em;
+  color:var(--ink);
+  margin-bottom:48px;
+}
+.manifesto h2 .strike{
+  text-decoration:line-through;
+  text-decoration-thickness:6px;
+  text-decoration-color:var(--lime);
+  color:var(--gray);
+}
+.manifesto h2 .new{
+  color:var(--ink);
+  background:var(--lime);
+  padding:0 12px;
+  display:inline-block;
+  transform:rotate(-1deg);
+}
+.manifesto-body{
+  display:grid;
+  grid-template-columns:1fr 1.5fr;
+  gap:80px;
+  align-items:start;
+  margin-top:80px;
+}
+.manifesto-quote{
+  font-family:'Noto Serif TC',serif;
+  font-size:24px;
+  font-weight:500;
+  line-height:1.5;
+  color:var(--ink);
+  border-left:4px solid var(--lime);
+  padding-left:24px;
+}
+.manifesto-quote cite{
+  display:block;
+  margin-top:24px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  letter-spacing:.25em;
+  font-style:normal;
+  color:var(--ink-soft);
+}
+.manifesto-text p{
+  font-family:'Noto Serif TC',serif;
+  font-size:17px;
+  line-height:1.95;
+  color:var(--ink-soft);
+  margin-bottom:20px;
+}
+.manifesto-text p strong{
+  color:var(--ink);
+  font-weight:700;
+  background:var(--lime-soft);
+  padding:0 4px;
+}
+@media (max-width:900px){.manifesto-body{grid-template-columns:1fr;gap:48px}}
+
+/* === ABOUT === */
+.about{background:var(--bg);color:var(--paper)}
+.about .section-label{color:var(--lime)}
+.about .section-label::before{background:var(--lime)}
+.about .section-title{color:var(--paper)}
+.about .section-title .accent{color:var(--bg)}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1.4fr;
+  gap:80px;
+  align-items:start;
+}
+.about-intro p{
+  font-family:'Noto Serif TC',serif;
+  font-size:18px;
+  line-height:1.9;
+  color:var(--paper-dim);
+  margin-bottom:24px;
+}
+.about-intro p:first-of-type::first-letter{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:90px;
+  font-weight:700;
+  float:left;
+  line-height:.85;
+  margin:8px 14px 0 -2px;
+  color:var(--lime);
+}
+.about-stats{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:1px;
+  background:rgba(200,240,76,.2);
+  border:1px solid rgba(200,240,76,.2);
+}
+.stat{
+  background:var(--bg);
+  padding:32px 28px;
+  position:relative;
+}
+.stat .num{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:72px;
+  font-weight:700;
+  line-height:1;
+  color:var(--lime);
+  letter-spacing:-.04em;
+}
+.stat .num small{
+  font-size:20px;
+  color:var(--gray);
+  margin-left:4px;
+  font-weight:500;
+}
+.stat .label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.15em;
+  color:var(--paper-dim);
+  margin-top:12px;
+  font-weight:500;
+}
+
+.bio-list{
+  margin-top:32px;
+  border-top:2px solid var(--lime);
+}
+.bio-list .row{
+  display:grid;
+  grid-template-columns:140px 1fr;
+  gap:24px;
+  padding:20px 0;
+  border-bottom:1px solid var(--line);
+  align-items:start;
+}
+.bio-list .row .key{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.2em;
+  color:var(--lime);
+  font-weight:700;
+  padding-top:4px;
+}
+.bio-list .row .val{
+  font-family:'Noto Serif TC',serif;
+  font-size:16px;
+  color:var(--paper);
+  line-height:1.7;
+}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr;gap:48px}}
+
+/* === VISION (兩大核心理念) === */
+.vision{
+  background:var(--paper);
+  position:relative;
+}
+.vision-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:32px;
+}
+.vision-card{
+  position:relative;
+  background:var(--bg);
+  color:var(--paper);
+  padding:0;
+  overflow:hidden;
+  transition:transform .4s;
+  display:flex;
+  flex-direction:column;
+}
+.vision-card:hover{transform:translateY(-8px)}
+.vision-card .v-num{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:120px;
+  font-weight:700;
+  line-height:.8;
+  color:var(--lime);
+  padding:48px 48px 0;
+  letter-spacing:-.05em;
+}
+.vision-card .v-tag{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.25em;
+  color:var(--gray);
+  padding:0 48px;
+  margin-top:16px;
+}
+.vision-card h3{
+  font-family:'Noto Serif TC',serif;
+  font-size:32px;
+  font-weight:900;
+  color:var(--paper);
+  padding:24px 48px 16px;
+  line-height:1.3;
+}
+.vision-card p{
+  font-size:15px;
+  line-height:1.85;
+  color:var(--paper-dim);
+  padding:0 48px 48px;
+  flex:1;
+}
+.vision-card .v-bar{
+  height:8px;
+  background:var(--lime);
+  margin-top:auto;
+}
+@media (max-width:900px){.vision-grid{grid-template-columns:1fr}}
+
+/* === SERVICE GALLERY === */
+.service{background:var(--paper-dim)}
+.service-intro{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  margin-bottom:80px;
+  align-items:end;
+}
+.service-intro p{
+  font-family:'Noto Serif TC',serif;
+  font-size:18px;
+  line-height:1.9;
+  color:var(--ink-soft);
+}
+.service-gallery{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:24px;
+}
+.service-item{
+  position:relative;
+  overflow:hidden;
+  background:var(--bg);
+  cursor:pointer;
+  transition:transform .4s;
+}
+.service-item:hover{transform:translateY(-4px)}
+.service-item img{
+  width:100%;height:100%;
+  object-fit:cover;
+  transition:transform .8s ease;
+}
+.service-item:hover img{transform:scale(1.05)}
+.service-item .overlay{
+  position:absolute;
+  bottom:0;left:0;right:0;
+  padding:32px 24px 24px;
+  background:linear-gradient(180deg,transparent,rgba(8,20,15,.95));
+  color:var(--paper);
+}
+.service-item .overlay .tag{
+  display:inline-block;
+  background:var(--lime);
+  color:var(--bg);
+  padding:4px 12px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;
+  letter-spacing:.2em;
+  margin-bottom:12px;
+  font-weight:700;
+}
+.service-item .overlay h4{
+  font-family:'Noto Serif TC',serif;
+  font-size:20px;
+  font-weight:700;
+  line-height:1.4;
+  margin-bottom:6px;
+}
+.service-item .overlay p{
+  font-size:13px;
+  color:var(--paper-dim);
+  line-height:1.5;
+}
+.service-item.full{grid-column:span 12;aspect-ratio:21/9}
+.service-item.large{grid-column:span 7;aspect-ratio:4/3}
+.service-item.medium{grid-column:span 5;aspect-ratio:4/3}
+.service-item.tall-l{grid-column:span 5;aspect-ratio:3/4}
+.service-item.tall-r{grid-column:span 7;aspect-ratio:3/4}
+@media (max-width:900px){
+  .service-intro{grid-template-columns:1fr;gap:24px}
+  .service-item{grid-column:span 12!important;aspect-ratio:4/3!important}
+}
+
+/* === POLICY === */
+.policy{background:var(--paper)}
+.policy-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  align-items:start;
+}
+.policy-list{list-style:none}
+.policy-list li{
+  padding:36px 0;
+  border-bottom:1px solid rgba(13,31,26,.15);
+  display:grid;
+  grid-template-columns:80px 1fr;
+  gap:24px;
+  align-items:start;
+  transition:padding .3s;
+  position:relative;
+}
+.policy-list li:hover{padding-left:12px}
+.policy-list li:hover .num{color:var(--ink)}
+.policy-list li:first-child{border-top:2px solid var(--ink)}
+.policy-list .num{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:48px;
+  font-weight:700;
+  color:var(--lime);
+  line-height:.9;
+  letter-spacing:-.04em;
+  transition:color .3s;
+}
+.policy-list h4{
+  font-family:'Noto Serif TC',serif;
+  font-size:22px;
+  font-weight:900;
+  margin-bottom:8px;
+}
+.policy-list p{
+  font-size:15px;
+  line-height:1.7;
+  color:var(--ink-soft);
+}
+.policy-side{
+  position:sticky;
+  top:140px;
+  background:var(--bg);
+  color:var(--paper);
+  padding:48px 40px;
+}
+.policy-side .quote-mark{
+  font-family:'Noto Serif TC',serif;
+  font-size:120px;
+  color:var(--lime);
+  line-height:.5;
+  font-weight:700;
+}
+.policy-side h3{
+  font-family:'Noto Serif TC',serif;
+  font-size:30px;
+  font-weight:900;
+  line-height:1.4;
+  margin:24px 0;
+  color:var(--paper);
+}
+.policy-side p{
+  color:var(--paper-dim);
+  font-size:15px;
+  line-height:1.85;
+}
+.policy-side .signature{
+  margin-top:40px;
+  padding-top:24px;
+  border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;align-items:center;
+}
+.policy-side .signature .name{
+  font-family:'Noto Serif TC',serif;
+  font-size:24px;
+  font-weight:700;
+  color:var(--paper);
+}
+.policy-side .signature .title{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.2em;
+  color:var(--lime);
+}
+@media (max-width:900px){
+  .policy-grid{grid-template-columns:1fr;gap:48px}
+  .policy-side{position:static}
+}
+
+/* === CONTACT === */
+.contact{background:var(--paper-dim);padding:120px 40px}
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1.2fr;
+  gap:80px;
+  max-width:1280px;
+  margin:0 auto;
+  align-items:start;
+}
+.contact-info h2{
+  font-family:'Noto Serif TC',serif;
+  font-weight:900;
+  font-size:clamp(32px,4vw,52px);
+  line-height:1.15;
+  margin-bottom:32px;
+}
+.contact-info h2 .accent{
+  background:var(--lime);
+  padding:0 8px 4px;
+  display:inline-block;
+  transform:rotate(-1deg);
+}
+.contact-info > p{
+  font-family:'Noto Serif TC',serif;
+  font-size:17px;
+  line-height:1.85;
+  color:var(--ink-soft);
+  margin-bottom:32px;
+}
+.contact-detail{
+  border-top:2px solid var(--ink);
+  margin-top:32px;
+}
+.contact-detail .row{
+  display:grid;
+  grid-template-columns:120px 1fr;
+  gap:20px;
+  padding:18px 0;
+  border-bottom:1px solid rgba(13,31,26,.15);
+  align-items:center;
+}
+.contact-detail .key{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.2em;
+  color:var(--ink-soft);
+  font-weight:700;
+}
+.contact-detail .val{
+  font-family:'Noto Serif TC',serif;
+  font-size:16px;
+  color:var(--ink);
+}
+.contact-detail .val a{
+  color:var(--ink);
+  text-decoration:none;
+  font-weight:700;
+  border-bottom:2px solid var(--lime);
+}
+.contact-detail .val a:hover{background:var(--lime);}
+.contact-form{
+  background:var(--paper);
+  padding:48px 40px;
+  position:relative;
+  border:2px solid var(--ink);
+}
+.contact-form::before{
+  content:'';
+  position:absolute;
+  top:-2px;left:-2px;right:-2px;
+  height:8px;
+  background:var(--lime);
+}
+.contact-form h3{
+  font-family:'Noto Serif TC',serif;
+  font-size:24px;
+  font-weight:900;
+  margin-bottom:6px;
+  margin-top:8px;
+}
+.contact-form .form-sub{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.2em;
+  color:var(--ink-soft);
+  margin-bottom:32px;
+}
+.field{margin-bottom:20px}
+.field label{
+  display:block;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.2em;
+  color:var(--ink-soft);
+  margin-bottom:8px;
+  font-weight:500;
+}
+.field input,.field select,.field textarea{
+  width:100%;
+  padding:12px 14px;
+  background:var(--paper-dim);
+  border:1px solid rgba(13,31,26,.2);
+  font-family:'Noto Sans TC',sans-serif;
+  font-size:15px;
+  color:var(--ink);
+  transition:all .2s;
+}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:none;
+  border-color:var(--ink);
+  background:var(--paper);
+}
+.field textarea{resize:vertical;min-height:120px}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-submit{
+  margin-top:8px;
+  width:100%;
+  padding:18px;
+  background:var(--ink);
+  color:var(--lime);
+  border:none;
+  font-family:'Noto Sans TC',sans-serif;
+  font-size:14px;
+  letter-spacing:.2em;
+  font-weight:700;
+  cursor:pointer;
+  transition:all .2s;
+}
+.form-submit:hover{background:var(--lime);color:var(--ink)}
+@media (max-width:900px){
+  .contact-grid{grid-template-columns:1fr;gap:48px}
+  .field-row{grid-template-columns:1fr}
+}
+
+/* === CTA === */
+.cta{
+  background:var(--bg-deep);
+  color:var(--paper);
+  padding:140px 40px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.cta::before{
+  content:'04';
+  position:absolute;
+  left:50%;top:50%;
+  transform:translate(-50%,-50%);
+  font-family:'Space Grotesk',sans-serif;
+  font-weight:700;
+  font-size:65vw;
+  color:var(--bg-soft);
+  line-height:1;
+  letter-spacing:-.05em;
+  pointer-events:none;
+}
+.cta-content{position:relative;z-index:2;max-width:900px;margin:0 auto}
+.cta .label{
+  display:inline-block;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.4em;
+  color:var(--bg);
+  background:var(--lime);
+  padding:8px 20px;
+  margin-bottom:32px;
+  font-weight:500;
+}
+.cta h2{
+  font-family:'Noto Serif TC',serif;
+  font-size:clamp(48px,7vw,108px);
+  font-weight:900;
+  line-height:1;
+  margin-bottom:32px;
+  letter-spacing:-.02em;
+}
+.cta h2 .accent{
+  background:var(--lime);
+  color:var(--bg);
+  padding:0 12px 4px;
+  display:inline-block;
+  transform:rotate(-1deg);
+  margin:0 4px;
+}
+.cta p{
+  font-family:'Noto Serif TC',serif;
+  font-size:20px;
+  color:var(--paper-dim);
+  margin-bottom:48px;
+  line-height:1.7;
+}
+.ballot{
+  display:inline-block;
+  border:3px solid var(--lime);
+  padding:24px 48px;
+  margin-top:32px;
+  position:relative;
+  background:rgba(0,0,0,.3);
+}
+.ballot .ballot-label{
+  position:absolute;
+  top:-14px;left:50%;transform:translateX(-50%);
+  background:var(--bg-deep);
+  padding:0 16px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.3em;
+  color:var(--lime);
+}
+.ballot-row{display:flex;align-items:center;gap:32px}
+.ballot-num{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:96px;
+  font-weight:700;
+  color:var(--lime);
+  line-height:1;
+  letter-spacing:-.03em;
+}
+.ballot-info{text-align:left}
+.ballot-info .name{
+  font-family:'Noto Serif TC',serif;
+  font-size:32px;
+  font-weight:900;
+  margin-bottom:6px;
+  color:var(--paper);
+}
+.ballot-info .role{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  letter-spacing:.2em;
+  color:var(--lime);
+}
+
+/* === FOOTER === */
+footer{
+  background:var(--bg);
+  color:var(--paper-dim);
+  padding:80px 40px 40px;
+}
+.foot-grid{
+  max-width:1280px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr;
+  gap:60px;
+  margin-bottom:60px;
+}
+.foot-brand h3{
+  font-family:'Noto Serif TC',serif;
+  font-size:32px;
+  color:var(--paper);
+  margin-bottom:8px;
+  font-weight:900;
+}
+.foot-brand .slogan{
+  font-family:'Space Grotesk',sans-serif;
+  letter-spacing:.05em;
+  color:var(--lime);
+  margin-bottom:24px;
+  font-size:18px;
+  font-weight:600;
+}
+.foot-brand p{font-size:14px;line-height:1.7;color:var(--gray)}
+.foot-col h5{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.3em;
+  color:var(--lime);
+  margin-bottom:20px;
+  font-weight:500;
+}
+.foot-col ul{list-style:none}
+.foot-col li{padding:8px 0;font-size:14px}
+.foot-col a{color:var(--paper-dim);text-decoration:none;transition:color .2s}
+.foot-col a:hover{color:var(--lime)}
+.foot-legal{
+  max-width:1280px;
+  margin:0 auto;
+  padding:24px 0;
+  border-top:1px solid var(--line);
+  font-size:12px;
+  line-height:1.7;
+  color:var(--gray);
+}
+.foot-bottom{
+  max-width:1280px;
+  margin:0 auto;
+  padding-top:24px;
+  border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:.15em;
+  flex-wrap:wrap;gap:16px;
+  color:var(--gray);
+}
+@media (max-width:768px){.foot-grid{grid-template-columns:1fr;gap:40px}}
+
+/* === ANIM === */
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(40px);transition:all .9s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<div class="banner">▲ <strong>網站原型 PROTOTYPE</strong> ・ 內容為示意，正式上線前須由本人審閱</div>
+
+<nav class="topnav">
+  <div class="brand">
+    <span class="num">04</span>
+    <span class="name">郭凱倫 ｜ KUO KAI-LUN</span>
+  </div>
+  <ul>
+    <li><a href="#manifesto">換少年</a></li>
+    <li><a href="#about">認識凱倫</a></li>
+    <li><a href="#vision">兩大主張</a></li>
+    <li><a href="#service">行動足跡</a></li>
+    <li><a href="#policy">政見規劃</a></li>
+    <li><a href="#contact">聯絡我們</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-eyebrow">2026・彰化市東區・第一選區</div>
+    <h1>
+      郭凱倫
+      <span class="second">KUO KAI-LUN ・ 30</span>
+    </h1>
+
+    <div class="hero-slogan">
+      <div class="line"><span class="em">東區</span>要更新</div>
+      <div class="line">換 <span class="em">少年</span> 來拚</div>
+      <div class="sub">A NEW VOICE FOR CHANGHUA EAST</div>
+    </div>
+
+    <div class="hero-meta">
+      <div class="item">
+        <div class="label">Party 政黨</div>
+        <div class="value">台灣民眾黨</div>
+      </div>
+      <div class="item">
+        <div class="label">District 選區</div>
+        <div class="value">彰化市東區・第一選區</div>
+      </div>
+      <div class="item">
+        <div class="label">Age 世代</div>
+        <div class="value">30 歲・青年世代</div>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#vision" class="btn btn-primary">看政見 →</a>
+      <a href="#contact" class="btn btn-ghost">聯絡服務</a>
+    </div>
+  </div>
+
+  <div class="hero-image-wrap">
+    <div class="hero-image">
+      <span class="hero-image-tag">2026 ELECTION</span>
+      <div class="hero-image-frame"></div>
+      <img src="images/hero.jpg" alt="郭凱倫形象照">
+    </div>
+    <div class="hero-image-num">04<small>NO. FOUR</small></div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>東區要更新 <span class="dot">★</span> 換少年來拚 <span class="dot">★</span> 打造宜居東區 <span class="dot">★</span> 不只清水溝修路燈 <span class="dot">★</span> 更有效率、更透明 <span class="dot">★</span></span>
+    <span>東區要更新 <span class="dot">★</span> 換少年來拚 <span class="dot">★</span> 打造宜居東區 <span class="dot">★</span> 不只清水溝修路燈 <span class="dot">★</span> 更有效率、更透明 <span class="dot">★</span></span>
+  </div>
+</div>
+
+<!-- ELECTION INFO -->
+<section class="election">
+  <div class="election-grid">
+    <div class="election-cell">
+      <div class="label">Election 選舉</div>
+      <div class="value">彰化市市民代表<small>第一選區・東區</small></div>
+    </div>
+    <div class="election-cell">
+      <div class="label">Vote Day 投票日</div>
+      <div class="value">2026/<strong>11/28</strong><small>日期以中選會公告為準</small></div>
+    </div>
+    <div class="election-cell">
+      <div class="label">Number 號次</div>
+      <div class="value"><strong>04</strong>　郭凱倫<small>民眾黨提名</small></div>
+    </div>
+    <div class="election-cell">
+      <div class="label">Generation 世代</div>
+      <div class="value"><strong>30</strong> 歲<small>青年世代代表</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO（特色：換少年宣言） -->
+<section class="manifesto" id="manifesto">
+  <div class="container manifesto-content">
+    <div class="manifesto-pre">— A MANIFESTO ／ 一份宣言</div>
+    <h2>
+      不只<span class="strike">清水溝</span>、<br>
+      不只<span class="strike">修路燈</span>、<br>
+      <span class="new">換個方法</span>做事。
+    </h2>
+
+    <div class="manifesto-body">
+      <div>
+        <div class="manifesto-quote">
+          「民代真正應該扮演的，<br>
+          是能夠把城市長遠方向、<br>
+          民眾真實需求<br>
+          與政府執行能力<br>
+          三者銜接起來的<br>
+          <strong style="background:var(--lime);padding:0 8px;color:var(--ink)">溝通者與監督者</strong>。」
+          <cite>— 郭凱倫 ｜ KUO KAI-LUN</cite>
+        </div>
+      </div>
+
+      <div class="manifesto-text">
+        <p>近年來，凱倫在地方服務第一線工作，接觸到許多民眾最真實的需求與困難，也看見<strong>基層政治如果能夠更積極、更貼近人民</strong>，很多問題其實可以更早被看見、更快被處理。</p>
+
+        <p>東區的地理位置接近台中，有台 74 線、國道一號與國道三號，交通條件便利，未來也有<strong>台中捷運綠線延伸</strong>、<strong>台鐵捷運共構金馬站</strong>等重大建設。整體來說東區具備相當優秀的宜居發展潛力，但現階段距離真正宜居，仍然還有一段路。</p>
+
+        <p>一位民代在都市發展中的角色，應該做出城市格局，而不是只做<strong>清水溝、修路燈的「高級里長」</strong>；也不應該只是好大喜功，追求表面上的硬體建設，最終造成公帑浪費。</p>
+
+        <p>未來凱倫希望推動東區朝向更安全交通環境、更完善生活機能、更舒適公共空間，以及更具前瞻性的整體規劃發展，讓東區不只是通勤方便，而是<strong>真正適合生活、適合成家、也適合下一代成長的地方</strong>。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-label"><span class="num">02</span> About <span style="color:var(--gray)">— 認識郭凱倫</span></div>
+    <h2 class="section-title reveal">
+      30 歲、<br>嘉義大學畢業、<br>
+      議員助理出身。
+    </h2>
+
+    <div class="about-grid">
+      <div class="about-intro reveal">
+        <p>民國 84 年 5 月於彰化出生，現年 30 歲，家中排行老大。畢業於國立嘉義大學生物事業管理學系。退伍後在地方產業端歷練四年（光展應材、亞德客國際擔任業務），113 年起進入彰化縣議員吳韋達服務處擔任議員助理，並擔任東區主任。</p>
+        <p>同時擔任<strong style="color:var(--lime)">彰化縣青年諮詢委員會 城市發展組組長</strong>，這份角色讓凱倫從更宏觀的角度思考彰化的未來——城市規劃、交通建設、青年留鄉等議題，都是組內的工作核心。</p>
+      </div>
+
+      <div>
+        <div class="about-stats">
+          <div class="stat">
+            <div class="num">30<small>歲</small></div>
+            <div class="label">青年世代候選人</div>
+          </div>
+          <div class="stat">
+            <div class="num">4<small>年</small></div>
+            <div class="label">產業端業務歷練</div>
+          </div>
+          <div class="stat">
+            <div class="num">2<small>年+</small></div>
+            <div class="label">議員助理 ・ 東區主任</div>
+          </div>
+          <div class="stat">
+            <div class="num">04</div>
+            <div class="label">彰化市東區候選號次</div>
+          </div>
+        </div>
+
+        <div class="bio-list">
+          <div class="row">
+            <div class="key">出 身</div>
+            <div class="val">彰化市和調里・全福街<br>民國 84 年 5 月生</div>
+          </div>
+          <div class="row">
+            <div class="key">學 歷</div>
+            <div class="val">國立嘉義大學<br>生物事業管理學系（104.09–108.07）</div>
+          </div>
+          <div class="row">
+            <div class="key">現 職</div>
+            <div class="val">彰化縣議員吳韋達服務處<br>議員助理 ・ 東區主任<br>（民國 113 年至今）</div>
+          </div>
+          <div class="row">
+            <div class="key">公 職</div>
+            <div class="val">彰化縣青年諮詢委員會<br>城市發展組組長</div>
+          </div>
+          <div class="row">
+            <div class="key">職 涯</div>
+            <div class="val">亞德客國際集團 業務（111–113）<br>光展應材股份有限公司 業務（108–110）</div>
+          </div>
+          <div class="row">
+            <div class="key">家 庭</div>
+            <div class="val">父親從商，母親為退休教師<br>家中排行老大</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISION（兩大核心理念） -->
+<section class="vision" id="vision">
+  <div class="container">
+    <div class="section-label"><span class="num">03</span> Vision <span style="color:var(--ink-soft)">— 兩大核心主張</span></div>
+    <h2 class="section-title reveal">
+      凱倫的<br>
+      <span class="accent">兩條主軸</span>。
+    </h2>
+
+    <div class="vision-grid">
+      <div class="vision-card reveal">
+        <div class="v-num">01</div>
+        <div class="v-tag">URBAN DEVELOPMENT ／ 地方發展</div>
+        <h3>打造宜居東區，<br>讓年輕人願意<br>留下來生根。</h3>
+        <p>東區交通條件便利，未來有台中捷運綠線延伸、台鐵共構金馬站等重大建設，但宜居還差一段路。我希望推動東區朝向更安全交通、更完善生活機能、更舒適公共空間，讓這裡不只是通勤方便，更是適合生活、適合成家、也適合下一代成長的地方。</p>
+        <div class="v-bar"></div>
+      </div>
+
+      <div class="vision-card reveal">
+        <div class="v-num">02</div>
+        <div class="v-tag">POLITICAL CULTURE ／ 地方政治</div>
+        <h3>更有效率、<br>更透明、<br>更有未來的政治。</h3>
+        <p>地方政治不應只是被動等待陳情、零碎處理個案。真正有價值的地方政治，應該主動發現問題、提前提出對策、持續追蹤進度，並讓民眾清楚知道事情的所有進度與成效。我會堅持務實問政、理性監督，讓地方政治盡可能透明公開。</p>
+        <div class="v-bar"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE -->
+<section class="service" id="service">
+  <div class="container">
+    <div class="section-label"><span class="num">04</span> Field Notes <span style="color:var(--ink-soft)">— 行動足跡</span></div>
+    <div class="service-intro">
+      <h2 class="section-title reveal" style="margin-bottom:0">
+        從<span class="accent">學校</span>到<span class="accent">巷弄</span>，<br>
+        從<span class="accent">交通</span>到<span class="accent">動保</span>。
+      </h2>
+      <p class="reveal">
+        參選不是選舉那一天才開始的事。在被提名之前，凱倫已經以議員助理、東區主任、青年諮詢委員的身份，走遍東區的學校、社區與街口。基層服務不是選前才做的事——是每天都在做的事。
+      </p>
+    </div>
+
+    <div class="service-gallery">
+      <div class="service-item full reveal">
+        <img src="images/school.jpg" alt="大竹國小母校運動會活動">
+        <div class="overlay">
+          <span class="tag">母校情懷 ・ 大竹國小</span>
+          <h4>回到母校，看下一代的彰化</h4>
+          <p>大竹國小校友身份，回母校參與校園運動會。從小在這裡長大、念書、踢球——讓下一代擁有更好的成長環境，是這次參選最具體的初心。</p>
+        </div>
+      </div>
+
+      <div class="service-item large reveal">
+        <img src="images/traffic.jpg" alt="維護交通權益">
+        <div class="overlay">
+          <span class="tag">交通議題 ・ 親自跟工程</span>
+          <h4>維護交通權益，盯廠商盡責施作</h4>
+          <p>路口號誌、號誌箱維護不能只靠投訴。親自到現場確認廠商施工進度與品質——一個民代不該只是「轉發陳情」的人，而是「監督進度」的人。</p>
+        </div>
+      </div>
+
+      <div class="service-item medium reveal">
+        <img src="images/animal.jpg" alt="為動物受虐發聲">
+        <div class="overlay">
+          <span class="tag">公民倡議 ・ 動保發聲</span>
+          <h4>為動物受虐發聲</h4>
+          <p>動物保護議題不只是議會質詢的事，更是社會文明的尺度。從個案陳情到政策推動，凱倫持續關注動保議題的落實。</p>
+        </div>
+      </div>
+
+      <div class="service-item tall-l reveal">
+        <img src="images/elderly.jpg" alt="入戶探訪宣導反詐騙">
+        <div class="overlay">
+          <span class="tag">入戶服務 ・ 反詐騙宣導</span>
+          <h4>走進長輩家門，談反詐騙</h4>
+          <p>反詐騙宣導不能只貼海報。親自走進長輩家中、坐下來聊、聽他們最近接過什麼電話——這才是「貼近人民」的真正意思。</p>
+        </div>
+      </div>
+
+      <div class="service-item tall-r reveal">
+        <img src="images/elderly.jpg" alt="社區會議聆聽民意">
+        <div class="overlay">
+          <span class="tag">社區會議 ・ 議題溝通</span>
+          <h4>議題溝通，從基層開始</h4>
+          <p>協助處理選民服務、地方建設陳情、政策研究與公共議題溝通等事務。一場場社區會議的累積，才是政策真正落地的基礎。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POLICY -->
+<section class="policy" id="policy">
+  <div class="container">
+    <div class="section-label"><span class="num">05</span> Policy <span style="color:var(--ink-soft)">— 政見規劃</span></div>
+    <h2 class="section-title reveal">
+      具體可被檢驗的<br>
+      <span class="accent">五項承諾</span>。
+    </h2>
+
+    <div class="policy-grid">
+      <ol class="policy-list">
+        <li class="reveal">
+          <div class="num">01</div>
+          <div>
+            <h4>承接捷運綠線・金馬車站機會</h4>
+            <p>台中捷運綠線延伸彰化、台鐵共構金馬車站是東區未來最大的發展機遇。督促市府提前盤點周邊道路、停車、公共空間需求，避免等到通車才被動因應。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="num">02</div>
+          <div>
+            <h4>更安全的交通環境</h4>
+            <p>系統性盤點東區易肇事路口、通學路線、長輩散步路徑，爭取號誌調整、人行道改善、夜間照明補強。讓孩子上學、長輩出門、年輕人騎車都更安心。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="num">03</div>
+          <div>
+            <h4>更完善的生活機能</h4>
+            <p>年輕人願不願意留在東區，看的是日常生活的細節：採買方便嗎？運動空間夠嗎？孩子有地方玩嗎？我會把這些「軟性指標」提升到市政層級討論。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="num">04</div>
+          <div>
+            <h4>有效率、可追蹤的選民服務</h4>
+            <p>建立陳情案件數位化追蹤平台，每一件選民反映的問題，都有編號、有進度、有結案紀錄。陳情不再石沉大海，每一通電話都會有回音。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="num">05</div>
+          <div>
+            <h4>透明問政・公開揭露</h4>
+            <p>落實民眾黨「公開透明」主張，質詢內容、預算審查紀錄、選民服務統計，定期公開揭露。讓代表的工作被看見、被檢驗、被追蹤。</p>
+          </div>
+        </li>
+      </ol>
+
+      <aside class="policy-side reveal">
+        <div class="quote-mark">"</div>
+        <h3>不是好大喜功的<br>硬體建設，<br>是真正讓<br>下一代<br>願意留下來。</h3>
+        <p>面對地方事務，我會堅持務實問政、理性監督，要求政策有方向、建設有配套、預算有效益，並時刻與民眾溝通討論，將地方政治盡可能透明公開，讓彰化的地方政治，讓人民重新產生希望，做出民眾有感的結果。</p>
+        <div class="signature">
+          <span class="name">郭凱倫</span>
+          <span class="title">CANDIDATE 04</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-label"><span class="num">06</span> Contact <span style="color:var(--ink-soft)">— 聯絡我們</span></div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h2>有事，<br><span class="accent">直接說</span>。</h2>
+        <p>無論是道路、號誌、長照、教育、青年議題，或任何東區生活上的疑難雜症——電話、email、現場拜訪都歡迎。每一件陳情都會建檔、追蹤、回覆。</p>
+
+        <div class="contact-detail">
+          <div class="row">
+            <div class="key">PHONE</div>
+            <div class="val"><a href="tel:0923215659">0923-215-659</a></div>
+          </div>
+          <div class="row">
+            <div class="key">EMAIL</div>
+            <div class="val"><a href="mailto:kailun.guo@gmail.com">kailun.guo@gmail.com</a></div>
+          </div>
+          <div class="row">
+            <div class="key">SERVICE</div>
+            <div class="val">彰化市東區（競選服務處設置中）</div>
+          </div>
+          <div class="row">
+            <div class="key">FACEBOOK</div>
+            <div class="val">郭凱倫 ・ 彰化東區（待連結）</div>
+          </div>
+          <div class="row">
+            <div class="key">INSTAGRAM</div>
+            <div class="val">@kailun.kuo（待連結）</div>
+          </div>
+          <div class="row">
+            <div class="key">LINE</div>
+            <div class="val">＠（待設置官方帳號）</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <h3>線上陳情 / 服務申請</h3>
+        <div class="form-sub">SERVICE REQUEST FORM</div>
+
+        <div class="field-row">
+          <div class="field">
+            <label>姓名 NAME</label>
+            <input type="text" placeholder="請輸入您的姓名">
+          </div>
+          <div class="field">
+            <label>聯絡電話 PHONE</label>
+            <input type="tel" placeholder="0900-000-000">
+          </div>
+        </div>
+        <div class="field">
+          <label>居住區域 AREA</label>
+          <select>
+            <option>請選擇您的居住區域</option>
+            <option>彰化市東區</option>
+            <option>彰化市西區</option>
+            <option>彰化市南區</option>
+            <option>彰化市北區</option>
+            <option>彰化市中區</option>
+            <option>非彰化市</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>案件類別 CATEGORY</label>
+          <select>
+            <option>請選擇</option>
+            <option>道路 / 號誌 / 路燈</option>
+            <option>排水 / 水溝 / 積水</option>
+            <option>交通 / 行人空間</option>
+            <option>長照 / 銀髮服務</option>
+            <option>教育 / 青年議題</option>
+            <option>動物保護</option>
+            <option>環境 / 綠地</option>
+            <option>其他</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>案件說明 MESSAGE</label>
+          <textarea placeholder="請描述您希望反映的事項，越詳細越好（時間、地點、現況）"></textarea>
+        </div>
+        <button class="form-submit" type="button" onclick="alert('表單功能尚未串接後端，請暫時使用上方電話或 Email 聯絡。')">送出申請　→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="cta-content">
+    <div class="label">2026 ・ 11 ・ 28　彰化市東區市民代表選舉</div>
+    <h2>
+      <span class="accent">東區</span>要更新，<br>
+      換 <span class="accent">少年</span> 來拚。
+    </h2>
+    <p>
+      把您的一票，交給願意換個方法做事、<br>
+      帶著新世代視角為東區把關的人。
+    </p>
+
+    <div class="ballot">
+      <span class="ballot-label">YOUR BALLOT ／ 您的選票</span>
+      <div class="ballot-row">
+        <div class="ballot-num">04</div>
+        <div class="ballot-info">
+          <div class="name">郭 凱 倫</div>
+          <div class="role">彰化市東區市民代表 ・ 民眾黨提名</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <h3>郭凱倫</h3>
+      <div class="slogan">KUO KAI-LUN ／ DISTRICT 04</div>
+      <p>2026 年彰化市東區（第一選區）市民代表參選人。<br>台灣民眾黨提名 ・ 30 歲青年世代。<br>以「打造宜居東區・更有效率的地方政治」為兩大核心主張。</p>
+    </div>
+    <div class="foot-col">
+      <h5>NAVIGATION</h5>
+      <ul>
+        <li><a href="#manifesto">換少年宣言</a></li>
+        <li><a href="#about">認識凱倫</a></li>
+        <li><a href="#vision">兩大主張</a></li>
+        <li><a href="#service">行動足跡</a></li>
+        <li><a href="#policy">政見規劃</a></li>
+        <li><a href="#contact">聯絡我們</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h5>CONTACT 聯繫</h5>
+      <ul>
+        <li>電話：0923-215-659</li>
+        <li>Email：kailun.guo@gmail.com</li>
+        <li>選區：彰化市東區・第一選區</li>
+        <li>競選服務處：設置中</li>
+        <li>Facebook 粉專：待連結</li>
+        <li>Instagram：待連結</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-legal">
+    本網站為「郭凱倫競選辦公室」依《公職人員選舉罷免法》及《政治獻金法》設置之競選網站。網站內容若含廣告，依法刊登廣告刊登者：郭凱倫競選辦公室。<br>
+    ▲ 此版本為網站原型（PROTOTYPE），所有候選人簡介、政見細節、聯絡資料皆為示意內容，並非候選人本人提供之正式內容。正式上線前須由候選人本人逐項審閱、修改、確認後方得公開使用。
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 郭凱倫競選辦公室 ・ 台灣民眾黨彰化市東區提名候選人</span>
+    <span>CHANGHUA EAST ・ DISTRICT 04 ・ 2026</span>
+  </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
+  });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const id=a.getAttribute('href');
+    if(id.length>1){
+      const t=document.querySelector(id);
+      if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}
+    }
+  });
+});
+</script>
+
+</body>
+</html>
